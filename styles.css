@@ -1,0 +1,143 @@
+body {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.container {
+  text-align: center;
+  border: 1px solid #f0e7e0;
+  border-radius: 4px;
+  padding: 30px 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  background: white;
+}
+
+.submit {
+  background: #96c7c1;
+  border: #96c7c1;
+  font-family: "Indie Flower", cursive;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+}
+
+.justify-content-between {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.cloudy {
+  color: #96c7c1;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#actualTemp {
+  font-family: "Indie Flower", cursive;
+  font-family: "Quicksand", sans-serif;
+  font-size: 60px;
+}
+
+#celcius {
+  font-family: "Indie Flower", cursive;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
+
+#cityDate {
+  font-family: "Indie Flower", cursive;
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  line-height: 0.8;
+  text-align: right;
+}
+
+#actualCity {
+  font-family: "Indie Flower", cursive;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #96c7c1;
+  font-size: 32px;
+  line-height: 1;
+  text-align: right;
+}
+
+#blockDate {
+  font-size: 18px;
+  text-align: right;
+  line-height: 1;
+}
+
+.humidity {
+  color: #96c7c1;
+}
+
+#percent {
+  color: #96c7c1;
+}
+
+.wind {
+  color: #96c7c1;
+}
+
+#wind-speed {
+  color: #96c7c1;
+}
+
+.col-4 {
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#next4days {
+  padding-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-3 {
+  border: 1px solid #96c7c1;
+  border-radius: 4px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 18px;
+  font-family: "Indie Flower", cursive;
+  font-family: "Quicksand", sans-serif;
+}
+
+.cloud-sun {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #96c7c1;
+}
+
+.sun-rain {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #96c7c1;
+}
+
+.sun {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #96c7c1;
+}
+
+.sun2 {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #96c7c1;
+}
+
+footer {
+  font-family: monospace;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: grey;
+}
