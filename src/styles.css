@@ -135,9 +135,20 @@ body {
   color: #96c7c1;
 }
 
-footer {
+#footerName {
   font-family: monospace;
   padding-top: 30px;
   padding-bottom: 10px;
+  color: grey;
+}
+
+.gitHubLink {
+  font-family: monospace;
+  text-decoration: none;
+  color: #96c7c1;
+}
+
+.gitHubLink:hover {
+  text-decoration: underline;
   color: grey;
 }
