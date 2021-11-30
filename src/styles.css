@@ -38,10 +38,16 @@ body {
   font-size: 60px;
 }
 
-#celcius {
+#weather-unit {
   font-family: "Indie Flower", cursive;
   font-family: "Quicksand", sans-serif;
-  font-size: 30px;
+  position: relative;
+  font-size: 18px;
+  top: -30px;
+}
+
+#fahrenheit {
+  text-decoration: none;
 }
 
 #cityDate {
