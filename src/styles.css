@@ -27,9 +27,8 @@ body {
 }
 
 #icon {
-  color: #96c7c1;
-  font-size: 45px;
-  font-weight: bold;
+  position: relative;
+  top: -27px;
 }
 
 #actualTemp {
