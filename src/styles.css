@@ -35,15 +35,15 @@ body {
 #actualTemp {
   font-family: "Indie Flower", cursive;
   font-family: "Quicksand", sans-serif;
-  font-size: 60px;
+  font-size: 85px;
 }
 
 #weather-unit {
   font-family: "Indie Flower", cursive;
   font-family: "Quicksand", sans-serif;
   position: relative;
-  font-size: 18px;
-  top: -30px;
+  font-size: 23px;
+  top: -41px;
 }
 
 #fahrenheit {
