@@ -84,6 +84,15 @@ function showFahrenheit(event) {
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", showFahrenheit);
 
+function showCelcius(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#actualTemp");
+  tempElement.innerHTML = Math.round(celciusTemp);
+}
+
+let celcius = document.querySelector("#celcius");
+celcius.addEventListener("click", showCelcius);
+
 let celciusTemp = null;
 
 searchCity("New York");
