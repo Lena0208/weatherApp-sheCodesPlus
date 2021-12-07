@@ -69,26 +69,27 @@ function currentStandort(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let cityInput = document.querySelector("#search");
-cityInput.addEventListener("submit", submitInput);
-
-let currentLocation = document.querySelector("#currentBtn");
-currentLocation.addEventListener("click", currentStandort);
-
 function showFahrenheit(event) {
   event.preventDefault();
   let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
   let tempElement = document.querySelector("#actualTemp");
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 }
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", showFahrenheit);
 
 function showCelcius(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#actualTemp");
   tempElement.innerHTML = Math.round(celciusTemp);
 }
+
+let cityInput = document.querySelector("#search");
+cityInput.addEventListener("submit", submitInput);
+
+let currentLocation = document.querySelector("#currentBtn");
+currentLocation.addEventListener("click", currentStandort);
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showFahrenheit);
 
 let celcius = document.querySelector("#celcius");
 celcius.addEventListener("click", showCelcius);
