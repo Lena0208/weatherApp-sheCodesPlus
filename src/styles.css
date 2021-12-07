@@ -44,6 +44,11 @@ body {
   top: -41px;
 }
 
+#celcius {
+  text-decoration: none;
+  color: grey;
+}
+
 #fahrenheit {
   text-decoration: none;
   color: #96c7c1;
