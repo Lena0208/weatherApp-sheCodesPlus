@@ -28,23 +28,33 @@ let day = days[now.getDay()];
 
 currentDay.innerHTML = `${day}`;
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecastDaily = response.data.daily;
+
   let forecast = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row" id="nextDays">`;
-  let days = ["Wednesdey", "Thursday", "Friday", "Saturday"];
-  days.forEach(function (day) {
+  forecastDaily.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `<div class="col-3 forecastDate">
-          ${day}
+          ${formatDay(forecastDay.dt)}
           <br />
-          <img src="https://openweathermap.org/img/wn/50d@2x.png"
+          <img src="https://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
           id="forecastIcon">
           <br />
-          <span class="temp-max">8° | </span>
-          <span class="temp-min">6°</span>
+          <span class="temp-max">${forecastDay.temp.max}° | </span>
+          <span class="temp-min">${forecastDay.temp.min}°</span>
         </div>`;
   });
 
