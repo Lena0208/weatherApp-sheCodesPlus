@@ -31,15 +31,24 @@ currentDay.innerHTML = `${day}`;
 function displayForecast() {
   let forecast = document.querySelector("#forecast");
 
-  forecast.innerHTML = `<div class="row" id="next4days">
-        <div class="col-3 forecastDate">
-          Monday
+  let forecastHTML = `<div class="row" id="nextDays">`;
+  let days = ["Wednesdey", "Thursday", "Friday", "Saturday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-3 forecastDate">
+          ${day}
           <br />
-          <img src="https://openweathermap.org/img/wn/50d@2x.png">
+          <img src="https://openweathermap.org/img/wn/50d@2x.png"
+          id="forecastIcon">
           <br />
           <span class="firstDay-max">8° | </span>
           <span class="firstDay-min">6°</span>
         </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
 }
 
 function showWeather(response) {
