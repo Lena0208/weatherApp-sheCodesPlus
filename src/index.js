@@ -28,6 +28,20 @@ let day = days[now.getDay()];
 
 currentDay.innerHTML = `${day}`;
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  forecast.innerHTML = `<div class="row" id="next4days">
+        <div class="col-3 forecastDate">
+          Monday
+          <br />
+          <img src="https://openweathermap.org/img/wn/50d@2x.png">
+          <br />
+          <span class="firstDay-max">8° | </span>
+          <span class="firstDay-min">6°</span>
+        </div>`;
+}
+
 function showWeather(response) {
   document.querySelector("#actual-city").innerHTML = response.data.name;
   document.querySelector("#actualTemp").innerHTML = Math.round(
@@ -97,3 +111,4 @@ celcius.addEventListener("click", showCelcius);
 let celciusTemp = null;
 
 searchCity("New York");
+displayForecast();
