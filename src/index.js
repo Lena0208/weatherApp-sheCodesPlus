@@ -54,7 +54,7 @@ function displayForecast(response) {
           }@2x.png"
           id="forecastIcon">
           <br />
-          <span class="temp-max">${Math.round(forecastDay.temp.max)}° | </span>
+          <span class="temp-max">${Math.round(forecastDay.temp.max)}°  </span>
           <span class="temp-min">${Math.round(forecastDay.temp.min)}°</span>
         </div>`;
     }
@@ -115,13 +115,6 @@ function currentStandort(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function showFahrenheit(event) {
-  event.preventDefault();
-  let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
-  let tempElement = document.querySelector("#actualTemp");
-  tempElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
 function showCelcius(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#actualTemp");
@@ -133,12 +126,6 @@ cityInput.addEventListener("submit", submitInput);
 
 let currentLocation = document.querySelector("#currentBtn");
 currentLocation.addEventListener("click", currentStandort);
-
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", showFahrenheit);
-
-let celcius = document.querySelector("#celcius");
-celcius.addEventListener("click", showCelcius);
 
 let celciusTemp = null;
 
