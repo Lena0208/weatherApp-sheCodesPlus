@@ -96,14 +96,20 @@ body {
   justify-content: center;
 }
 
-#nextDays {
-  padding-bottom: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
+.forecastDate {
+  font-size: 20px;
 }
 
+#forecastIcon {
+  max-width: 75%;
+}
+
+.temp-max {
+  font-size: 19px;
+}
 .temp-min {
   color: #96c7c1;
+  font-size: 19px;
 }
 
 .col-3 {
